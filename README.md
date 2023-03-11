@@ -6,7 +6,7 @@ This is an example of the S3 Read Connector for reader type 'Single File Reader'
 * Check the reader docs at www.letsdata.io/docs#readconnectors
 * This implements the simple 'SingleFileParser' interface 
   * Interface definition: [Link](https://github.com/lets-data/letsdata-data-interface/blob/main/src/main/java/com/resonance/letsdata/data/readers/interfaces/parsers/SingleFileParser.java)
-  * Interface documentation: [Docs](https://82x9zh5ijl.execute-api.us-east-1.amazonaws.com/Test/docs#sdkinterface)
+  * Interface documentation: [Docs](https://www.letsdata.io/docs#sdkinterface)
 * WARC files are of the following format: 
 ```
 ...
