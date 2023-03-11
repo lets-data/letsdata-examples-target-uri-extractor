@@ -1,5 +1,5 @@
 # letsdata-examples-target-uri-extractor
-#Let's Data S3 Single File Reader example that implements the parser for the WARC files to extract the crawled web URIs
+#Let's Data S3 Single File Reader example that implements the parser for the WARC files to extract the crawled web URIs.
 
 This is an example of the S3 Read Connector for reader type 'Single File Reader'. 
 
@@ -147,3 +147,6 @@ $ > ./letsdata datasets view --datasetName <datasetName> --prettyPrint
 # list the datset's tasks
 $ > ./letsdata tasks list --datasetName <datasetName> --prettyPrint 
 ```
+* The records that are extracted and written to Kinesis stream can be accessed using the IAM role that is created by #Let's Data. See [Granting Customer Access to #Let's Data Resources](www.letsdata.io/docs#accessgrants) section in the docs. There is a sample implementation code and CLI program that can be used to retrieve the records [letsdata-writeconnector-reader](https://github.com/lets-data/letsdata-writeconnector-reader)
+
+* Details about tasks, execution logs, errors and dataset metrics can be learned at: [www.letsdata.io/docs](www.letsdata.io/docs)
