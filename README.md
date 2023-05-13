@@ -3,6 +3,7 @@
 
 This is an example of the S3 Read Connector for reader type 'Single File Reader'. 
 
+* Detailed instructions on how to run this example end to end are at: https://www.letsdata.io/docs#examples (Example - TargetURIExtractor)
 * Check the reader docs at www.letsdata.io/docs#readconnectors
 * This implements the simple 'SingleFileParser' interface 
   * Interface definition: [Link](https://github.com/lets-data/letsdata-data-interface/blob/main/src/main/java/com/resonance/letsdata/data/readers/interfaces/parsers/SingleFileParser.java)
