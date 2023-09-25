@@ -55,8 +55,8 @@ public class TargetUriExtractor implements SingleFileParser {
                 String uri = lineParts[1].trim();
                 if (StringUtils.isBlank(uri)) {
                     ErrorDocInterface errorDoc = new ErrorDoc(
-                            ImmutableMap.of(s3FileType, offsetBytes),
-                            ImmutableMap.of(s3FileType, offsetBytes+endIndex-startIndex),
+                            ImmutableMap.of(s3FileType, Long.toString(offsetBytes)),
+                            ImmutableMap.of(s3FileType, Long.toString(offsetBytes+endIndex-startIndex)),
                             "URI is null or empty",
                             null,
                             "WARC-Type: request",
@@ -97,8 +97,8 @@ public class TargetUriExtractor implements SingleFileParser {
             }
         }
         ErrorDocInterface errorDoc = new ErrorDoc(
-                ImmutableMap.of(s3FileType, offsetBytes),
-                ImmutableMap.of(s3FileType, offsetBytes+endIndex-startIndex),
+                ImmutableMap.of(s3FileType, Long.toString(offsetBytes)),
+                ImmutableMap.of(s3FileType, Long.toString(offsetBytes+endIndex-startIndex)),
                 "'WARC-Target-URI: ' key not found",
                 null,
                 "WARC-Type: request",
