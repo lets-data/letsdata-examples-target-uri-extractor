@@ -87,6 +87,7 @@ WARC-Type: response
 ```
 {
   "datasetName": "<datasetName placeholder>",
+  "region": "<region placeholder>",
   "accessGrantRoleArn": "arn:aws:iam::<aws account with IAM role>:role/LetsData_AccessRole_TargetUriExtractor",
   "customerAccountForAccess": "<aws account that should be given access>",
   "readConnector": {
